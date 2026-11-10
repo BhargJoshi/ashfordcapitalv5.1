@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Visual layer (mobile first): icons · illustrations · figures · tiles
+   One language: marks (scattered → aligned), rings and nodes, one crimson line.
+   ========================================================================== */
+
+/* ---------- line icons ---------- */
+.vi {
+  --vi-a: #B39B6E; --vi-bg: var(--white);
+  width: 44px; height: 44px; flex: none; color: var(--crimson);
+  fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
+.vi .a { stroke: var(--vi-a); }
+.vi .af { fill: var(--vi-a); stroke: none; }
+.vi--sm { width: 30px; height: 30px; stroke-width: 2.3; }
+.vi--lg { width: 56px; height: 56px; }
+.panel .vi { color: var(--white); --vi-a: var(--beige); --vi-bg: var(--crimson); }
+
+/* icon in a soft disc */
+.vi-disc { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--beige-soft); flex: none; transition: background-color .3s, transform .4s var(--ease); }
+.vi-disc .vi { --vi-bg: transparent; width: 32px; height: 32px; stroke-width: 2; }
+.vi-disc--lg { width: 64px; height: 64px; }
+.vi-disc--lg .vi { width: 36px; height: 36px; }
+.panel .vi-disc { background: rgba(255, 255, 255, .1); }
+@media (min-width: 640px) {
+  .vi-disc { width: 64px; height: 64px; }
+  .vi-disc .vi { width: 36px; height: 36px; }
+  .vi-disc--lg { width: 80px; height: 80px; }
+  .vi-disc--lg .vi { width: 44px; height: 44px; }
+}
+
+/* ---------- illustrations ---------- */
+.art, .fig { position: relative; width: 100%; margin-inline: auto; }
+.art { max-width: 560px; }
+.art svg, .fig svg { width: 100%; height: 100%; overflow: visible; }
+.art .m, .fig .m {
+  stroke: rgba(29, 21, 23, .3); stroke-width: 1.7; stroke-linecap: round;
+  transform-box: view-box; transform-origin: var(--ox) var(--oy); transform: rotate(var(--a1));
+}
+.art .m.c, .fig .m.c { stroke: var(--crimson); stroke-width: 3; }
+.art .m.b, .fig .m.b { stroke: var(--beige-deep); stroke-width: 2.4; }
+.art .ln, .fig .ln { fill: none; stroke: var(--crimson); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.art .ln.soft, .fig .ln.soft { stroke: rgba(29, 21, 23, .3); stroke-width: 1.6; }
+.art .ln.faint, .fig .ln.faint { stroke: rgba(29, 21, 23, .14); stroke-width: 1.4; }
+.art .ln.bold { stroke-width: 3.4; }
+.art .ln.dash, .fig .ln.dash { stroke-dasharray: 3 7; }
+.fig .ln.b { stroke: var(--beige-deep); }
+.art .ring, .fig .ring { fill: none; stroke: var(--crimson); stroke-width: 2.2; }
+.art .ring.faint, .fig .ring.faint { stroke-opacity: .28; stroke-width: 1.3; }
+.art .ring.soft, .fig .ring.soft { stroke: rgba(29, 21, 23, .32); stroke-width: 1.8; }
+.art .ring.mid, .fig .ring.mid { stroke-opacity: .6; }
+.art .wp { fill: #fff; stroke: var(--crimson); stroke-width: 2; }
+.art .dot, .fig .dot { fill: var(--crimson); }
+.art .dot.soft, .fig .dot.soft { fill: rgba(29, 21, 23, .35); }
+.fig .crim-arc { stroke-width: 3.4; stroke-linecap: round; }
+.art .ln.handle { stroke-width: 8; }
+.fig .loop-ring { stroke-dasharray: 5 6; }
+.js .fig .loop-ring { transform-box: fill-box; transform-origin: center; }
+.art__lbl, .fig__lbl {
+  position: absolute; transform: translateX(-50%); white-space: nowrap;
+  font-size: .5938rem; font-weight: var(--w-name); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); line-height: 1.2;
+}
+.art__lbl.on { color: var(--crimson); }
+.fig__lbl { transform: none; font-size: .625rem; letter-spacing: .15em; }
+@media (min-width: 521px) { .art__lbl { font-size: .6875rem; letter-spacing: .15em; } }
+
+/* entrance: marks align, lines draw, soft elements fade — once, when scrolled into view */
+.js .art .m, .js .fig .m, .js .tile-art .m { transition: transform 1.6s var(--ease) var(--d, 0ms); }
+.js .art:not(.is-in) .m, .js .fig:not(.is-in) .m, .js .tile-art:not(.is-in) .m { transform: rotate(var(--a0)); }
+.js .art .draw, .js .fig .draw { stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 1.7s var(--ease) var(--d, 0ms); }
+.js .art.is-in .draw, .js .fig.is-in .draw { stroke-dashoffset: 0; }
+.js .art .fade, .js .fig .fade { transition: opacity 1.2s ease var(--d, 300ms); }
+.js .art:not(.is-in) .fade, .js .fig:not(.is-in) .fade { opacity: 0; }
+.js .art .node, .js .fig .node, .js .tile-art .node { transition: opacity 1s ease 1.2s; }
+.js .art:not(.is-in) .node, .js .fig:not(.is-in) .node, .js .tile-art:not(.is-in) .node { opacity: 0; }
+.js .art__lbl { transition: opacity .8s ease .8s; }
+.js .art:not(.is-in) .art__lbl { opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .js .art .m, .js .fig .m, .js .tile-art .m, .js .art .draw, .js .fig .draw, .js .art .fade, .js .fig .fade, .js .art .node, .js .fig .node, .js .tile-art .node, .js .art__lbl { transition: none !important; }
+  .js .art:not(.is-in) .m, .js .fig:not(.is-in) .m, .js .tile-art:not(.is-in) .m { transform: rotate(var(--a1)); }
+  .js .art .draw, .js .fig .draw { stroke-dashoffset: 0; }
+  .js .art:not(.is-in) .fade, .js .fig:not(.is-in) .fade, .js .art:not(.is-in) .node, .js .fig:not(.is-in) .node, .js .tile-art:not(.is-in) .node, .js .art:not(.is-in) .art__lbl { opacity: 1; }
+}
+.art.reveal, .fig.reveal { transform: none; }  /* the illustration animates itself; do not slide the whole thing */
+
+/* the portrait tile used inside the About statement */
+
+/* ---------- figure frame used on cards ---------- */
+.figbox { width: 100%; }
+.pcard .figbox { background: var(--beige-soft); border-radius: 14px; padding: .9rem 1rem; }
+.pcard .fig { max-width: 340px; }
+
+/* ---------- ticks & tags ---------- */
+.ticks { display: grid; gap: .45rem; color: var(--ink-2); }
+.ticks li { position: relative; padding-left: 1.4rem; }
+.ticks li::before { content: ""; position: absolute; left: 0; top: .82em; width: .75rem; height: 1.5px; background: var(--crimson); }
+.ticks--muted { color: var(--ink-3); }
+.ticks--muted li::before { background: var(--ink-3); }
+.panel .ticks { color: var(--on-crimson-soft); }
+.panel .ticks li::before { background: var(--beige); }
+
+/* ---------- icon tiles ---------- */
+.tiles { display: grid; gap: .7rem; grid-template-columns: minmax(0, 1fr); }
+.tile {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr); column-gap: 1rem; row-gap: .2rem; align-items: center; align-content: center;
+  padding: 1rem; background: var(--white); border: 1px solid var(--line); border-radius: var(--r-md); transition: border-color .3s, box-shadow .3s;
+}
+.tile .vi-disc { grid-row: 1 / span 2; }
+.tile h3, .tile h4, .tile .tile__t { font-family: var(--font-display); font-weight: var(--w-name); font-size: var(--step-1); line-height: 1.2; align-self: end; }
+.tile p:not(.tile__t) { grid-column: 2; align-self: start; color: var(--ink-2); font-size: .9375rem; max-width: 36ch; }
+.tile--solo { align-items: center; }
+.panel .tile { background: rgba(255, 255, 255, .07); border-color: var(--on-crimson-line); }
+.panel .tile p:not(.tile__t) { color: var(--on-crimson-soft); }
+@media (min-width: 560px) { .tiles--2, .tiles--4, .tiles--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 760px) {
+  .tiles { gap: 1rem; }
+  .tiles--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tiles--3 .tile, .tiles--4 .tile, .tiles--5 .tile { grid-template-columns: 1fr; row-gap: .55rem; padding: 1.4rem; align-content: start; }
+  .tiles--3 .tile .vi-disc, .tiles--4 .tile .vi-disc, .tiles--5 .tile .vi-disc { grid-row: auto; margin-bottom: .5rem; }
+  .tiles--3 .tile p:not(.tile__t), .tiles--4 .tile p:not(.tile__t), .tiles--5 .tile p:not(.tile__t) { grid-column: auto; }
+  .tiles--3 .tile :is(h3, h4, .tile__t), .tiles--4 .tile :is(h3, h4, .tile__t), .tiles--5 .tile :is(h3, h4, .tile__t) { align-self: auto; }
+}
+@media (min-width: 1040px) { .tiles--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .tiles--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (hover: hover) {
+  .tile:hover { border-color: var(--crimson); box-shadow: 0 10px 28px -18px rgba(104, 12, 32, .5); }
+  .tile:hover .vi-disc { background: var(--crimson); }
+  .tile:hover .vi-disc .vi { color: var(--white); --vi-a: var(--beige); --vi-bg: var(--crimson); }
+  .panel .tile:hover { border-color: var(--beige); box-shadow: none; }
+  .panel .tile:hover .vi-disc { background: var(--beige); }
+  .panel .tile:hover .vi-disc .vi { color: var(--crimson); --vi-a: var(--crimson-soft); }
+}
+
+/* ---------- pathway cards ---------- */
+.pcards { display: grid; gap: 1rem; }
+.pcard {
+  display: flex; flex-direction: column; gap: .5rem; padding: 1rem 1rem 1.25rem; background: var(--white);
+  border: 1px solid var(--line); border-radius: var(--r-md); transition: border-color .3s, box-shadow .3s, opacity .3s;
+}
+.pcard .figbox { margin-bottom: .6rem; }
+.pcard__k { font-size: .6875rem; font-weight: var(--w-name); letter-spacing: .16em; text-transform: uppercase; color: var(--crimson); padding-inline: .4rem; }
+.pcard__t { font-size: var(--step-3); padding-inline: .4rem; }
+.pcard__tag { font-family: var(--font-display); font-style: italic; font-size: var(--step-1); color: var(--crimson); padding-inline: .4rem; font-weight: var(--w-body); }
+.pcard .link-arrow { margin: auto .4rem 0; padding-top: .5rem; }
+.pcards.has-match .pcard:not(.is-match) { opacity: .5; }
+.pcard.is-match { border-color: var(--crimson); box-shadow: 0 0 0 1px var(--crimson), 0 14px 34px -22px rgba(104, 12, 32, .55); }
+@media (min-width: 900px) { .pcards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; } }
+@media (hover: hover) { .pcard:hover { border-color: var(--crimson); box-shadow: 0 14px 34px -22px rgba(104, 12, 32, .55); } }
+
+/* ---------- small helpers ---------- */
+.mini { display: grid; gap: .55rem; margin-top: .25rem; }
+.mini li { display: flex; align-items: center; gap: .65rem; font-size: .9688rem; color: var(--ink-2); }
+.mini li .vi { width: 26px; height: 26px; }
+.panel .mini li { color: var(--on-crimson-soft); }

@@ -1,0 +1,168 @@
+<!--meta
+title: Begin Your Journey
+description: A short readiness assessment for traders who understand markets but struggle to act consistently. Find the appropriate next step, whether a pathway, a conversation or further assessment.
+nav: begin
+body: page-begin
+-->
+
+<section class="phero phero--compact" aria-labelledby="begin-page-title">
+  <div class="container">
+    <div class="phero__grid phero__grid--art">
+      <div>
+        <h1 id="begin-page-title">A short assessment, <em>a relevant next step.</em></h1>
+        <p class="lead">For traders who know the concepts but struggle to act on them consistently.</p>
+      </div>
+      <div class="phero__art">{{art:begin}}</div>
+    </div>
+    <ul class="tiles tiles--3 begin-for" aria-label="Who the assessment is for">
+      <li class="tile"><span class="vi-disc">{{ic:clock}}</span><p class="tile__t">Some market exposure</p><p>Six months or more.</p></li>
+      <li class="tile"><span class="vi-disc">{{ic:gap}}</span><p class="tile__t">Knows the concepts</p><p>Results still inconsistent.</p></li>
+      <li class="tile"><span class="vi-disc">{{ic:process}}</span><p class="tile__t">Wants consistency</p><p>More than shortcuts.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="assessment" aria-labelledby="assess-title">
+  <div class="container begin-page__grid">
+
+    <div class="assess" data-assess>
+      <h2 id="assess-title" class="sr-only">Readiness assessment</h2>
+      <noscript><p class="notice">This assessment needs JavaScript. To reach us another way, use the <a href="contact.html">Contact</a> page.</p></noscript>
+
+      <div class="assess__progress" data-assess-progress>
+        <ol class="assess__bar" aria-hidden="true"><li></li><li></li><li></li><li></li><li></li></ol>
+        <p class="assess__label" data-assess-label aria-live="polite">Step 1 of 5 &middot; Current experience</p>
+      </div>
+
+      <form class="form" novalidate data-assess-form autocomplete="on">
+        <input type="hidden" name="interest" value="">
+
+        <fieldset data-step="0" data-title="Current experience">
+          <legend tabindex="-1">Current experience</legend>
+          <p class="form__hint">This helps us understand your exposure to markets.</p>
+          <div class="q" data-q="experience">
+            <p class="q__label" id="q-exp">How long have you been exposed to markets?</p>
+            <div class="choices" role="radiogroup" aria-labelledby="q-exp">
+              <label class="choice"><input type="radio" name="experience" value="lt6m"><span class="choice__box">Less than 6 months</span></label>
+              <label class="choice"><input type="radio" name="experience" value="6m-2y"><span class="choice__box">6 months to 2 years</span></label>
+              <label class="choice"><input type="radio" name="experience" value="2-5y"><span class="choice__box">2 to 5 years</span></label>
+              <label class="choice"><input type="radio" name="experience" value="5y+"><span class="choice__box">More than 5 years</span></label>
+            </div>
+            <p class="field-error" data-error></p>
+          </div>
+          <div class="q" data-q="live">
+            <p class="q__label" id="q-live">Have you traded with live capital?</p>
+            <div class="choices" role="radiogroup" aria-labelledby="q-live">
+              <label class="choice"><input type="radio" name="live" value="not-yet"><span class="choice__box">Not yet</span></label>
+              <label class="choice"><input type="radio" name="live" value="occasionally"><span class="choice__box">Occasionally</span></label>
+              <label class="choice"><input type="radio" name="live" value="regularly"><span class="choice__box">Regularly</span></label>
+            </div>
+            <p class="field-error" data-error></p>
+          </div>
+        </fieldset>
+
+        <fieldset data-step="1" data-title="Primary difficulty" hidden>
+          <legend tabindex="-1">Primary difficulty</legend>
+          <p class="form__hint" data-prefill-note hidden>Prefilled from your choice on the previous page. You can change it.</p>
+          <div class="q" data-q="difficulty">
+            <p class="q__label" id="q-diff">Where is your main bottleneck?</p>
+            <div class="choices" role="radiogroup" aria-labelledby="q-diff">
+              <label class="choice"><input type="radio" name="difficulty" value="interpretation"><span class="choice__box"><span class="choice__ico">{{ic:context:sm}}</span><span>Interpreting the market<span class="choice__desc">I struggle to read context and know what matters.</span></span></span></label>
+              <label class="choice"><input type="radio" name="difficulty" value="decision"><span class="choice__box"><span class="choice__ico">{{ic:thesis:sm}}</span><span>Making decisions<span class="choice__desc">I struggle to form a clear thesis or choose between readings.</span></span></span></label>
+              <label class="choice"><input type="radio" name="difficulty" value="execution"><span class="choice__box"><span class="choice__ico">{{ic:action:sm}}</span><span>Executing under pressure<span class="choice__desc">I know the plan, but hesitate or deviate when it is live.</span></span></span></label>
+              <label class="choice"><input type="radio" name="difficulty" value="risk"><span class="choice__box"><span class="choice__ico">{{ic:risk:sm}}</span><span>Managing risk<span class="choice__desc">I understand risk, but do not apply it consistently.</span></span></span></label>
+              <label class="choice"><input type="radio" name="difficulty" value="review"><span class="choice__box"><span class="choice__ico">{{ic:review:sm}}</span><span>Reviewing and improving<span class="choice__desc">I cannot tell whether losses are skill, execution or variance.</span></span></span></label>
+            </div>
+            <p class="field-error" data-error></p>
+          </div>
+        </fieldset>
+
+        <fieldset data-step="2" data-title="Current process" hidden>
+          <legend tabindex="-1">Current process</legend>
+          <p class="form__hint">There is no right answer. This shows us where to start.</p>
+          <div class="q" data-q="process">
+            <p class="q__label" id="q-proc">How do you currently approach trading?</p>
+            <div class="choices" role="radiogroup" aria-labelledby="q-proc">
+              <label class="choice"><input type="radio" name="process" value="plan-followed"><span class="choice__box"><span class="choice__ico">{{ic:check:sm}}</span>I follow a written plan with defined rules</span></label>
+              <label class="choice"><input type="radio" name="process" value="plan-deviate"><span class="choice__box"><span class="choice__ico">{{ic:alternatives:sm}}</span>I have a plan, but often deviate from it</span></label>
+              <label class="choice"><input type="radio" name="process" value="in-the-moment"><span class="choice__box"><span class="choice__ico">{{ic:pulse:sm}}</span>I mostly decide in the moment</span></label>
+              <label class="choice"><input type="radio" name="process" value="outside"><span class="choice__box"><span class="choice__ico">{{ic:signal:sm}}</span>I rely on signals, mentors or other people&rsquo;s views</span></label>
+            </div>
+            <p class="field-error" data-error></p>
+          </div>
+        </fieldset>
+
+        <fieldset data-step="3" data-title="Development objective" hidden>
+          <legend tabindex="-1">Development objective</legend>
+          <p class="form__hint">What do you most want to be able to do?</p>
+          <div class="q" data-q="objective">
+            <p class="q__label" id="q-obj">I most want to improve how I&hellip;</p>
+            <div class="choices" role="radiogroup" aria-labelledby="q-obj">
+              <label class="choice"><input type="radio" name="objective" value="understand"><span class="choice__box"><span class="choice__ico">{{ic:eye:sm}}</span>Understand and read markets independently</span></label>
+              <label class="choice"><input type="radio" name="objective" value="execute"><span class="choice__box"><span class="choice__ico">{{ic:action:sm}}</span>Execute with consistency and discipline</span></label>
+              <label class="choice"><input type="radio" name="objective" value="allocate"><span class="choice__box"><span class="choice__ico">{{ic:rings:sm}}</span>Allocate and preserve capital over the long term</span></label>
+              <label class="choice"><input type="radio" name="objective" value="unsure"><span class="choice__box"><span class="choice__ico">{{ic:signpost:sm}}</span>I am not sure yet</span></label>
+            </div>
+            <p class="field-error" data-error></p>
+          </div>
+          <div class="input-wrap">
+            <label for="notes">Anything else we should know? <small>(optional)</small></label>
+            <textarea class="textarea" id="notes" name="notes" rows="3" maxlength="1000"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset data-step="4" data-title="Your details" hidden>
+          <legend tabindex="-1">Your details</legend>
+          <p class="form__hint">So that we can send your suggested next step.</p>
+          <div class="input-wrap" data-q="name">
+            <label for="name">Full name</label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" required>
+            <p class="field-error" data-error></p>
+          </div>
+          <div class="input-wrap" data-q="email">
+            <label for="email">Email</label>
+            <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" required>
+            <p class="field-error" data-error></p>
+          </div>
+          <div class="input-wrap" data-q="phone">
+            <label for="phone">Phone <small>(optional)</small></label>
+            <input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+            <p class="field-error" data-error></p>
+          </div>
+          <div class="q" data-q="consent">
+            <label class="choice choice--check"><input type="checkbox" name="consent" value="yes"><span class="choice__box"><span>I understand Ashford provides education, not investment advice, and I agree to be contacted about this enquiry. <span class="choice__desc">See the <a href="privacy.html">Privacy Policy</a> and <a href="disclaimer.html">Educational Disclaimer</a>.</span></span></span></label>
+            <p class="field-error" data-error></p>
+          </div>
+          <p class="error-text" data-submit-error role="alert" hidden></p>
+        </fieldset>
+
+        <div class="assess__nav">
+          <button class="btn btn--ghost" type="button" data-back hidden>Back</button>
+          <button class="btn btn--primary" type="submit" data-next>Continue {{icon:arrow}}</button>
+        </div>
+      </form>
+
+      <div class="result" data-assess-result hidden tabindex="-1" aria-live="polite">
+        <h2 class="result__title" data-result-title></h2>
+        <p class="result__lead" data-result-lead></p>
+        <dl class="result__summary" data-result-summary></dl>
+        <p class="notice" data-dev-notice hidden><strong>Form delivery is not connected.</strong> Your responses were not sent. The site owner needs to set <code>formEndpoint</code> in <code>assets/js/config.js</code>.</p>
+        <div class="btn-row result__actions">
+          <a class="btn btn--primary" data-result-link href="pathways.html">Explore the pathway {{icon:arrow}}</a>
+          <a class="btn btn--ghost" href="index.html">Back to home</a>
+        </div>
+        <p class="result__fine">This is an indication, not a placement. The Ashford team confirms the right fit with you.</p>
+      </div>
+    </div>
+
+    <div class="panel begin-side" role="group" aria-labelledby="after-title">
+      <h2 id="after-title" class="begin-side__h">What happens next</h2>
+      <ol class="steps">
+        <li><span class="steps__n">{{ic:eye:sm}}</span><div><h3>We review your responses</h3><p>Matched to the pathway that fits.</p></div></li>
+        <li><span class="steps__n">{{ic:signpost:sm}}</span><div><h3>You see a next step</h3><p>With the reasoning behind it.</p></div></li>
+        <li><span class="steps__n">{{ic:check:sm}}</span><div><h3>You choose what follows</h3><p>Nothing is urgent or guaranteed.</p></div></li>
+      </ol>
+      <p class="insight">{{node}}<span class="insight__t">Five short steps. One relevant next step.</span></p>
+    </div>
+  </div>
+</section>

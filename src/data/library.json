@@ -1,0 +1,158 @@
+[
+  {
+    "title": "Context before signal",
+    "type": "Concept",
+    "category": "market-intelligence", "categoryLabel": "Market Intelligence",
+    "topic": "intelligence", "topicLabel": "Market Intelligence",
+    "summary": "A pattern means little until the environment around it is defined.",
+    "body": [
+      { "text": "The same breakout behaves differently in a trending market, in a range, and ahead of a major event. Before reading any signal, define the environment it appears in." },
+      { "items": ["Regime: is the market trending, ranging or in transition?", "Calendar: which scheduled events could change the picture?", "Price history: where has price already reacted, and how?"] },
+      { "text": "Context does not tell you what will happen. It tells you how much weight a given signal deserves." }
+    ]
+  },
+  {
+    "title": "What deserves attention",
+    "type": "Framework",
+    "category": "market-intelligence", "categoryLabel": "Market Intelligence",
+    "topic": "intelligence", "topicLabel": "Market Intelligence",
+    "summary": "Three lanes for sorting a crowded set of inputs.",
+    "body": [
+      { "text": "Information overload is rarely a shortage problem. It is a prioritization problem. Give every input a lane:" },
+      { "items": ["Matters now: could change today's decision.", "Monitor: relevant, but not yet decisive.", "Noise: loud, but irrelevant to the decision."] },
+      { "text": "The discipline is not collecting more inputs. It is assigning each one a lane, and acting on the first lane only." }
+    ]
+  },
+  {
+    "title": "Regimes, not forecasts",
+    "type": "Concept",
+    "category": "market-intelligence", "categoryLabel": "Market Intelligence",
+    "topic": "intelligence", "topicLabel": "Market Intelligence",
+    "summary": "Describing the environment is more reliable than predicting the next move.",
+    "body": [
+      { "text": "A regime view says what kind of market this is, and which approaches suit it. It does not claim to know what happens next." },
+      { "text": "Ashford's intelligence work stays at this level: context and conditions, never calls. If a piece reads like a prediction, it does not belong here." }
+    ]
+  },
+  {
+    "title": "The anatomy of a decision",
+    "type": "Framework",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "frameworks", "topicLabel": "Decision Frameworks",
+    "summary": "Five parts that make a decision complete before any action is taken.",
+    "body": [
+      { "items": ["Thesis: a clear, testable view of what should happen and why.", "Conditions: what must be true for the view to hold.", "Alternatives: the other plausible readings, considered rather than ignored.", "Conviction: how strong the case is, expressed in size rather than emotion.", "Invalidation: the point at which the thesis is wrong, defined in advance."] },
+      { "text": "If any of the five is missing, the decision is not finished, and acting on it is a guess." }
+    ]
+  },
+  {
+    "title": "Define invalidation first",
+    "type": "Framework",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "frameworks", "topicLabel": "Decision Frameworks",
+    "summary": "State what would prove you wrong before you state what you want.",
+    "body": [
+      { "text": "Before entry, write down what would prove the thesis wrong, in observable terms. Position size then follows from the distance to that point and a risk limit set in advance." },
+      { "text": "A thesis with no invalidation is a hope. It also leaves every later decision exposed to emotion, because nothing was agreed beforehand." }
+    ]
+  },
+  {
+    "title": "Hesitation is a planning problem",
+    "type": "Concept",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "behaviour", "topicLabel": "Execution & Behaviour",
+    "summary": "Doubt at the moment of entry usually points to something left undecided earlier.",
+    "body": [
+      { "text": "Hesitation tends to appear when the condition, the size or the exit was never fully defined. At the moment of entry, the trader is forced to decide under pressure what should have been decided in advance." },
+      { "text": "Decide those things beforehand and entry becomes a check against a list, not a negotiation with fear." }
+    ]
+  },
+  {
+    "title": "FOMO is a missing rule",
+    "type": "Concept",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "behaviour", "topicLabel": "Execution & Behaviour",
+    "summary": "Fear of missing out fills the space where a rule should be.",
+    "body": [
+      { "text": "Fear of missing out appears when there is no rule for what to do after a move has already started. A rule such as \"no entry beyond a defined distance from the planned level\" turns a feeling into a decision that was made calmly, in advance." }
+    ]
+  },
+  {
+    "title": "Overtrading and the need to act",
+    "type": "Concept",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "behaviour", "topicLabel": "Execution & Behaviour",
+    "summary": "Often it is the discomfort of waiting, not the presence of opportunity.",
+    "body": [
+      { "text": "Overtrading usually has little to do with the market. It is the difficulty of doing nothing. A sound plan includes the condition \"no trade\", and treats a day without a valid setup as a correct outcome, not a wasted one." }
+    ]
+  },
+  {
+    "title": "When frameworks conflict",
+    "type": "Concept",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "behaviour", "topicLabel": "Execution & Behaviour",
+    "summary": "Two disagreeing frameworks are not two answers. They are a missing hierarchy.",
+    "body": [
+      { "text": "Conflicting signals from different frameworks create paralysis because no one decided which framework governs which question. Assign roles in advance: for example, one framework for direction and another for timing." },
+      { "text": "Then decide what happens when they disagree. A tie-break rule is a form of decision quality." }
+    ]
+  },
+  {
+    "title": "Decision Lab: the pre-event position",
+    "type": "Decision Lab",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "labs", "topicLabel": "Decision Labs & Trade Autopsies",
+    "summary": "An index at a range high, a policy decision in two days, and no position. Which stance can you defend?",
+    "body": [
+      { "text": "Illustrative scenario. An equity index is pressing against a multi-week range high. A policy decision is due in two days. You hold no position." },
+      { "text": "Three stances: act before the event, wait for confirmation after it, or stay out. None is correct by default. Each one is defensible only if it can answer three questions:" },
+      { "items": ["What must be true for this to work?", "What would prove it wrong, and when?", "What is at risk if it is wrong?"] },
+      { "text": "A lab judges the reasoning behind the stance, not the guess about what happens next." }
+    ]
+  },
+  {
+    "title": "Trade Autopsy: sound decision, unfavourable outcome",
+    "type": "Trade Autopsy",
+    "category": "decision-execution", "categoryLabel": "Decision & Execution",
+    "topic": "labs", "topicLabel": "Decision Labs & Trade Autopsies",
+    "summary": "A loss that was within the plan, examined in three separate parts.",
+    "body": [
+      { "text": "Illustrative case. A long position was taken after a range break, with the thesis, conditions and invalidation written beforehand. Price returned to the range and the position was closed at the planned point." },
+      { "items": ["Reasoning: sound. The thesis and its conditions were stated and reasonable.", "Execution: as planned. Size, entry and exit followed the written plan.", "Outcome: unfavourable. The loss stayed within the risk defined in advance."] },
+      { "text": "Verdict: no change to the process. Treating this as a mistake would teach the wrong lesson." }
+    ]
+  },
+  {
+    "title": "Separating decision from outcome",
+    "type": "Concept",
+    "category": "operator-standards", "categoryLabel": "Operator Standards",
+    "topic": "standards", "topicLabel": "Operator Standards",
+    "summary": "Judge reasoning, execution and result as three separate questions.",
+    "body": [
+      { "text": "Outcomes are shaped by uncertainty as well as by decisions. Judging a decision only by its result teaches the wrong lesson in both directions: it rewards lucky choices and punishes sound ones." },
+      { "items": ["Was the reasoning sound given what was known at the time?", "Did execution follow the plan?", "What was the outcome, and how much of it was within normal variance?"] }
+    ]
+  },
+  {
+    "title": "The Operator's Standard",
+    "type": "Standard",
+    "category": "operator-standards", "categoryLabel": "Operator Standards",
+    "topic": "standards", "topicLabel": "Operator Standards",
+    "summary": "Four commitments that hold regardless of results.",
+    "body": [
+      { "items": ["Evidence-led thinking: views are tested against evidence, not conviction or popularity.", "Risk discipline: risk is defined before action and honoured under pressure.", "Accountability: decisions are owned and reviewed, whatever the outcome.", "Independence: judgment that stands without signals, tips or outside validation."] }
+    ]
+  },
+  {
+    "title": "Independence from signals",
+    "type": "Standard",
+    "category": "operator-standards", "categoryLabel": "Operator Standards",
+    "topic": "standards", "topicLabel": "Operator Standards",
+    "summary": "Why Ashford does not issue them, and what it develops instead.",
+    "body": [
+      { "text": "A trader who depends on signals, tips or a community's opinion has outsourced the one skill that matters. Ashford does not issue signals." },
+      { "text": "The aim is a trader who can reach a decision, define its risk and own the result, alone. Everything in the method is built toward that independence." }
+    ]
+  }
+]

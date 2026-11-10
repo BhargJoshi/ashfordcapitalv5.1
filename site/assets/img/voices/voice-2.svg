@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+<defs>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9A3048"/><stop offset="1" stop-color="#4A0817"/></linearGradient>
+<radialGradient id="o"><stop offset="0" stop-color="#E6D9C4" stop-opacity=".6"/><stop offset="1" stop-color="#E6D9C4" stop-opacity="0"/></radialGradient>
+<linearGradient id="h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6EEDF"/><stop offset="1" stop-color="#E2D4BC"/></linearGradient>
+<linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6D9C4"/><stop offset="1" stop-color="#E6D9C4" stop-opacity=".78"/></linearGradient>
+</defs>
+<rect width="600" height="600" fill="url(#b)"/>
+<circle cx="500" cy="90" r="230" fill="url(#o)"/>
+<circle cx="70" cy="560" r="200" fill="url(#o)"/>
+<path d="M214 214C206 128 256 100 300 100c46 0 96 28 88 114 8 74 22 128 4 178H208c-18-50-2-104 6-178Z" fill="#33101A"/>
+<path d="M64 600C76 468 190 396 300 388c110 8 224 80 236 212Z" fill="url(#s)"/>
+<path d="M270 282h60v70c-20 16-40 16-60 0Z" fill="#E2D4BC"/>
+<ellipse cx="300" cy="212" rx="72" ry="86" fill="url(#h)"/>
+<path d="M230 196C242 146 270 130 304 130c40 0 64 22 68 66-24-30-52-44-82-44-26 0-46 14-60 44Z" fill="#33101A"/>
+</svg>

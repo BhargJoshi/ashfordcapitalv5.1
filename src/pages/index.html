@@ -1,0 +1,228 @@
+<!--meta
+title: Ashford Capital — From market knowledge to clear execution
+description: Ashford Capital is a market decision institution. We develop judgment and executional clarity in traders who understand markets but struggle to act on that understanding consistently.
+nav: home
+home: true
+body: page-home
+-->
+
+<!-- 1 · Hero: the title on one line, then the statement panel -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero__copy">
+      <h1 id="hero-title">From market knowledge to <em>clear execution.</em></h1>
+    </div>
+
+    <div class="panel hero__panel reveal" data-words-part>
+      <p class="hero__statement">We turn what traders <em>know</em> into what they <em>do.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- 2 · About: the statement, then three video boxes -->
+<section class="sec" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <h2 class="about__statement" id="about-title">Ashford is a market decision institution <em>for traders who know more than they act on.</em></h2>
+
+    <!--
+      THREE VIDEO BOXES
+      Drop your files into assets/video/ (in this repo: src/assets/video/) with the names below and they play
+      here automatically. To use another file name or location, change the src of its <source>.
+      Until a file exists, the box shows a quiet "Coming soon" placeholder instead of a broken player.
+      Optional per video: add poster="assets/video/ashford-1.jpg" to the <video> tag for a cover image.
+      Vertical videos: add style="--vbox-ratio: 9 / 16" to the .vgrid div.
+    -->
+    <div class="vgrid" data-videos role="group" aria-label="Ashford videos">
+      <figure class="vbox reveal" data-vbox>
+        <video class="vbox__video" controls preload="metadata" playsinline aria-label="Ashford video 1">
+          <source src="assets/video/ashford-1.mp4" type="video/mp4">
+        </video>
+        <div class="vbox__empty" aria-hidden="true"><span class="vbox__play">{{icon:play}}</span><span class="vbox__soon">Coming soon</span></div>
+      </figure>
+      <figure class="vbox reveal" style="--rd:80ms" data-vbox>
+        <video class="vbox__video" controls preload="metadata" playsinline aria-label="Ashford video 2">
+          <source src="assets/video/ashford-2.mp4" type="video/mp4">
+        </video>
+        <div class="vbox__empty" aria-hidden="true"><span class="vbox__play">{{icon:play}}</span><span class="vbox__soon">Coming soon</span></div>
+      </figure>
+      <figure class="vbox reveal" style="--rd:160ms" data-vbox>
+        <video class="vbox__video" controls preload="metadata" playsinline aria-label="Ashford video 3">
+          <source src="assets/video/ashford-3.mp4" type="video/mp4">
+        </video>
+        <div class="vbox__empty" aria-hidden="true"><span class="vbox__play">{{icon:play}}</span><span class="vbox__soon">Coming soon</span></div>
+      </figure>
+    </div>
+
+    <div class="about__foot">
+      <p class="insight reveal">{{node}}<span class="insight__t">Knowledge is not the gap. Execution is.</span></p>
+      <a class="btn btn--ghost" href="about.html">Our belief {{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Method: one loop, four moves -->
+<section class="sec sec--tight" id="method" aria-labelledby="method-title">
+  <div class="container">
+    <div class="panel mpanel reveal">
+      <h2 id="method-title">One loop. <em>Four moves.</em></h2>
+      <ol class="mcols">
+        <li class="mcol"><span class="mcol__n">01</span><h3>Interpret</h3><p>Read what matters now.</p></li>
+        <li class="mcol"><span class="mcol__n">02</span><h3>Decide</h3><p>Commit to a thesis and its limit.</p></li>
+        <li class="mcol"><span class="mcol__n">03</span><h3>Execute</h3><p>Follow the plan, not the feeling.</p></li>
+        <li class="mcol"><span class="mcol__n">04</span><h3>Review</h3><p>Judge the process, not the result.</p></li>
+      </ol>
+      <div class="mloop" aria-label="Review feeds the next read">
+        <span class="mloop__arrow" aria-hidden="true"></span><span class="mloop__line" aria-hidden="true"></span>
+        <p class="mloop__t">Every review sharpens the next read.</p>
+        <span class="mloop__line" aria-hidden="true"></span>{{node:mloop__node}}
+      </div>
+      <a class="btn btn--light mpanel__cta" href="method.html">Explore the Method {{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Services: what we have for you -->
+<section class="sec" id="pathways" aria-labelledby="services-title">
+  <div class="container services__grid">
+    <div class="services__head">
+      <h2 id="services-title">What we have <em>for you.</em></h2>
+      <div class="finder" data-finder>
+        <p class="finder__q" id="finder-q">Where do you struggle most?</p>
+        <div class="chips" role="group" aria-labelledby="finder-q">
+          <button class="chip" type="button" data-path="0" aria-pressed="false">Reading the market</button>
+          <button class="chip" type="button" data-path="1" aria-pressed="false">Acting on decisions</button>
+          <button class="chip" type="button" data-path="2" aria-pressed="false">Protecting capital</button>
+        </div>
+        <p class="finder__result" data-finder-result aria-live="polite">Not sure? <a href="begin.html">Take the assessment.</a></p>
+      </div>
+      <div class="services__art">
+        <div class="insight reveal">
+          {{art:pathways}}
+          <p class="insight__t">Choose by the ability you need, not the title you want.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="services__list">
+      <div class="svc acc" data-acc data-acc-single data-acc-hover data-svc>
+        <div class="svc__item acc__item is-open">
+          <h3 class="acc__head"><button class="acc__btn svc__btn" type="button" id="svc-t0" aria-expanded="true" aria-controls="svc-p0">
+            <span class="svc__n">01</span><span class="svc__thumb" aria-hidden="true">{{fig:readers}}</span><span class="svc__name">Market Readers</span><span class="acc__icon" aria-hidden="true"></span></button></h3>
+          <div class="acc__panel" id="svc-p0" role="region" aria-labelledby="svc-t0"><div class="acc__inner"><div class="svc__body">
+            <div class="svc__img">{{fig:readers}}</div>
+            <div class="svc__text">
+              <p class="svc__tag">Build the ability to interpret.</p>
+              <ul class="tags"><li>Organize knowledge</li><li>Prioritize what matters</li><li>Structure your reads</li></ul>
+              <a class="link-arrow" href="pathways.html#readers">In full {{icon:arrow}}</a>
+            </div>
+          </div></div></div>
+        </div>
+        <div class="svc__item acc__item">
+          <h3 class="acc__head"><button class="acc__btn svc__btn" type="button" id="svc-t1" aria-expanded="false" aria-controls="svc-p1">
+            <span class="svc__n">02</span><span class="svc__thumb" aria-hidden="true">{{fig:operators}}</span><span class="svc__name">Market Operators</span><span class="acc__icon" aria-hidden="true"></span></button></h3>
+          <div class="acc__panel" id="svc-p1" role="region" aria-labelledby="svc-t1"><div class="acc__inner"><div class="svc__body">
+            <div class="svc__img">{{fig:operators}}</div>
+            <div class="svc__text">
+              <p class="svc__tag">Build the ability to decide and execute.</p>
+              <ul class="tags"><li>Define risk first</li><li>Live execution</li><li>Performance review</li></ul>
+              <a class="link-arrow" href="pathways.html#operators">In full {{icon:arrow}}</a>
+            </div>
+          </div></div></div>
+        </div>
+        <div class="svc__item acc__item">
+          <h3 class="acc__head"><button class="acc__btn svc__btn" type="button" id="svc-t2" aria-expanded="false" aria-controls="svc-p2">
+            <span class="svc__n">03</span><span class="svc__thumb" aria-hidden="true">{{fig:thinkers}}</span><span class="svc__name">Capital Thinkers</span><span class="acc__icon" aria-hidden="true"></span></button></h3>
+          <div class="acc__panel" id="svc-p2" role="region" aria-labelledby="svc-t2"><div class="acc__inner"><div class="svc__body">
+            <div class="svc__img">{{fig:thinkers}}</div>
+            <div class="svc__text">
+              <p class="svc__tag">Build the ability to allocate capital.</p>
+              <ul class="tags"><li>Capital cycles</li><li>Portfolio thinking</li><li>Exposure and risk</li></ul>
+              <a class="link-arrow" href="pathways.html#thinkers">In full {{icon:arrow}}</a>
+            </div>
+          </div></div></div>
+        </div>
+      </div>
+      <a class="btn btn--ghost services__more" href="pathways.html">All pathways {{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · Trust: client photo + words, from src/data/voices.json (samples until real voices are added) -->
+<section class="sec" id="standards" aria-labelledby="trust-title">
+  <div class="container">
+    <div class="sec__head">
+      <h2 id="trust-title">Proof, <em>not promises.</em></h2>
+    </div>
+    {{voices}}
+    <div class="about__foot trust__foot">
+      <p class="insight reveal">{{node}}<span class="insight__t">No profit screenshots. We show how we think.</span></p>
+      <a class="btn btn--ghost" href="intelligence.html">See the research {{icon:arrow}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · Socials: the three channels, with their real pages -->
+<section class="sec" id="social" aria-labelledby="social-title">
+  <div class="container">
+    <div class="sec__head">
+      <h2 id="social-title">Find us where <em>we think out loud.</em></h2>
+    </div>
+    <div class="soc">
+      <div class="soc__card">
+        <a class="soc__link" href="https://www.instagram.com/ashfordcapital_/" data-social="instagram" target="_blank" rel="noopener">
+          <span class="soc__top"><span class="soc__logo">{{social:instagram}}</span><span class="soc__id"><strong>Instagram</strong><span>@ashfordcapital_</span></span></span>
+          <span class="soc__shot"><img src="assets/img/social-instagram.jpg" width="645" height="239" loading="lazy" alt="The Ashford Capital Instagram profile, with the Ashford emblem and the line 'From Market Knowledge To Live Execution'."></span>
+          <span class="soc__cta">Follow {{icon:arrow}}</span>
+        </a>
+      </div>
+      <div class="soc__card">
+        <a class="soc__link" href="https://substack.com/@ashfordcapital" data-social="substack" target="_blank" rel="noopener">
+          <span class="soc__top"><span class="soc__logo">{{social:substack}}</span><span class="soc__id"><strong>Substack</strong><span>@ashfordcapital</span></span></span>
+          <span class="soc__shot"><img src="assets/img/social-substack.png" width="649" height="267" loading="lazy" alt="The Ashford Capital Substack page: we help traders fix the gap between understanding the market and acting on that understanding."></span>
+          <span class="soc__cta">Read {{icon:arrow}}</span>
+        </a>
+      </div>
+      <div class="soc__card">
+        <a class="soc__link" href="https://www.linkedin.com/search/results/companies/?keywords=Ashford%20Capital" data-social="linkedin" target="_blank" rel="noopener">
+          <span class="soc__top"><span class="soc__logo">{{social:linkedin}}</span><span class="soc__id"><strong>LinkedIn</strong><span>Ashford Capital</span></span></span>
+          <span class="soc__shot"><img src="assets/img/social-linkedin.png" width="361" height="198" loading="lazy" alt="The Ashford Capital LinkedIn page header, showing the Ashford emblem on crimson."></span>
+          <span class="soc__cta">Connect {{icon:arrow}}</span>
+        </a>
+      </div>
+    </div>
+    <p class="insight socials__insight reveal">{{node}}<span class="insight__t">One idea at a time, in the open.</span></p>
+  </div>
+</section>
+
+<!-- 7 · Join us: light side + crimson side -->
+<section class="sec" id="join" aria-labelledby="join-title">
+  <div class="container">
+    <div class="join__card reveal">
+      <div class="join__brand">
+        {{welcome}}
+      </div>
+      <div class="join__form">
+        <h2 id="join-title">Oh, <em>hello.</em></h2>
+        <noscript><p class="join__alt">The email form needs JavaScript. <a href="contact.html">Contact us</a> instead.</p></noscript>
+        <div data-join>
+          <form class="form" data-join-form novalidate>
+            <div class="input-wrap" data-q="email">
+              <label for="join-email">Your email</label>
+              <input class="input" id="join-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+              <p class="field-error" data-error></p>
+            </div>
+            <p class="error-text" data-submit-error hidden></p>
+            <button class="btn btn--primary" type="submit" data-submit>Begin Your Journey {{icon:arrow}}</button>
+          </form>
+          <div class="join__done" data-join-done tabindex="-1" hidden>
+            <p class="join__ok">Thank you.</p>
+            <p class="lead">We will reply with a relevant next step.</p>
+            <p class="notice" data-dev-notice hidden>Form delivery is not connected yet. Add an endpoint in <code>config.js</code>.</p>
+          </div>
+        </div>
+        <p class="insight reveal">{{node}}<span class="insight__t">A person replies. Never a signal.</span></p>
+        <p class="join__alt">Prefer questions first? <a href="begin.html">Take the short assessment.</a></p>
+      </div>
+    </div>
+  </div>
+</section>

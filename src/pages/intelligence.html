@@ -1,0 +1,100 @@
+<!--meta
+title: Intelligence
+description: Research, decision frameworks and market thinking from Ashford Capital, published to show how we reason, not to predict markets.
+nav: intelligence
+body: page-intelligence
+-->
+
+<section class="phero" aria-labelledby="intel-title">
+  <div class="container phero__grid phero__grid--art">
+    <div>
+      <h1 id="intel-title">How Ashford <em>thinks.</em></h1>
+      <p class="lead">Research and frameworks, published to show how we reason. Not to predict markets.</p>
+    </div>
+    <div class="phero__art">{{art:intelligence}}</div>
+  </div>
+</section>
+
+<nav class="subnav" aria-label="On this page" data-subnav>
+  <div class="container">
+    <ul class="subnav__list">
+      <li><a href="#featured">Featured idea</a></li>
+      <li><a href="#library">The library</a></li>
+      <li><a href="#difference">Where it leads</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="sec" id="featured" aria-labelledby="featured-title">
+  <div class="container">
+    <div class="panel featured reveal">
+      <div class="featured__grid">
+        <header class="featured__head">
+          <h2 id="featured-title" class="featured__split">
+            <span class="featured__a">Why knowing more</span>
+            <span class="featured__link" aria-hidden="true"></span>
+            <span class="featured__b">Rarely fixes <em>execution.</em></span>
+          </h2>
+        </header>
+        <div class="featured__body">
+          <ul class="hov" data-hov>
+            <li><button class="hov__item" type="button" aria-expanded="false">
+              <img src="assets/img/art/hesitation.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A hand reaches for the buy button on a rising chart and stops short, while the clock keeps moving.">
+              <span class="hov__cap">Hesitation</span></button></li>
+            <li><button class="hov__item" type="button" aria-expanded="false">
+              <img src="assets/img/art/conflict.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A trader sits between two screens, one showing a rising market and one a falling market, unsure which to trust.">
+              <span class="hov__cap">Conflicting reads</span></button></li>
+            <li><button class="hov__item" type="button" aria-expanded="false">
+              <img src="assets/img/art/inconsistent.webp" width="1200" height="900" loading="lazy" decoding="async" alt="An erratic results chart above uneven wins and losses, with dice and coins on the desk.">
+              <span class="hov__cap">Inconsistent action</span></button></li>
+          </ul>
+          <ul class="tiles tiles--2">
+            <li class="tile"><span class="vi-disc">{{ic:context}}</span><h3>Knowledge is not a decision</h3><p>A decision commits to one reading, with defined risk.</p></li>
+            <li class="tile"><span class="vi-disc">{{ic:practice}}</span><h3>In practice</h3>
+              <ul class="mini"><li>Decide what matters first</li><li>Write the invalidation in advance</li><li>Size from the risk</li><li>Judge reasoning before result</li></ul></li>
+          </ul>
+          <a class="link-arrow" href="method.html">See the method {{icon:arrow}}</a>
+        </div>
+      </div>
+      <p class="featured__lede">Most struggling traders are not short of knowledge. They lack a way to turn it into one clear decision.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec lib" id="library" aria-labelledby="lib-title">
+  <div class="container">
+    <div class="sec__head"><h2 id="lib-title">Search the <em>library.</em></h2></div>
+
+    <div class="lib__controls">
+      <div class="lib__search">
+        <label class="sr-only" for="lib-q">Search the library</label>
+        {{icon:search}}
+        <input id="lib-q" class="input" type="search" placeholder="Search frameworks, concepts, labs" autocomplete="off" data-lib-search>
+      </div>
+      <div class="chips" role="group" aria-label="Filter by category">
+        <button class="chip" type="button" aria-pressed="true" data-cat="all">All</button>
+        <button class="chip" type="button" aria-pressed="false" data-cat="market-intelligence">Market Intelligence</button>
+        <button class="chip" type="button" aria-pressed="false" data-cat="decision-execution">Decision &amp; Execution</button>
+        <button class="chip" type="button" aria-pressed="false" data-cat="operator-standards">Operator Standards</button>
+      </div>
+      <div class="lib__row">
+        <p class="lib__status" role="status" aria-live="polite" data-lib-status></p>
+      </div>
+    </div>
+
+    {{library}}
+    <p class="lib__empty" data-lib-empty hidden>No entries match. Try a different search or clear a filter.</p>
+    <p class="lib__rule">No predictions. No signals. Only how we think.</p>
+  </div>
+</section>
+
+<section class="sec sec--tight" id="difference" aria-labelledby="diff-title">
+  <div class="container">
+    <h2 id="diff-title" class="diff__h">Intelligence shows how we think. <em>Pathways build the skill.</em></h2>
+    <ul class="tiles tiles--3 diff">
+      <li class="tile"><span class="vi-disc">{{ic:globe}}</span><h3>Intelligence</h3><p>Public. Shows how we think.</p></li>
+      <li class="tile"><span class="vi-disc">{{ic:signpost}}</span><h3>Pathways</h3><p>Structured development.</p><a class="link-arrow" href="pathways.html">View Pathways {{icon:arrow}}</a></li>
+      <li class="tile"><span class="vi-disc">{{ic:clipboard}}</span><h3>The assessment</h3><p>Finds your right next step.</p><a class="link-arrow" href="begin.html">Begin Your Journey {{icon:arrow}}</a></li>
+    </ul>
+  </div>
+</section>

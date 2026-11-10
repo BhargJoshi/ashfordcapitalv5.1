@@ -1,0 +1,74 @@
+<!--meta
+title: Contact
+description: Get in touch with Ashford Capital for general enquiries, partnerships or media. For pathway enquiries, begin with the readiness assessment.
+nav: contact
+body: page-contact
+-->
+
+<section class="phero phero--compact" aria-labelledby="contact-title">
+  <div class="container phero__grid phero__grid--art">
+    <div>
+      <h1 id="contact-title">Get in <em>touch.</em></h1>
+      <p class="lead">General questions, partnerships or media. Asking about a pathway? Start with the assessment.</p>
+    </div>
+    <div class="phero__art">{{art:contact}}</div>
+  </div>
+</section>
+
+<section class="sec" aria-label="Contact form">
+  <div class="container contact__grid">
+    <div class="contact__aside">
+      <span class="vi-disc">{{ic:signpost}}</span>
+      <h2 class="contact__h">Interested in a pathway?</h2>
+      <p>A few minutes shows which next step fits.</p>
+      <a class="link-arrow" href="begin.html">Begin Your Journey {{icon:arrow}}</a>
+      <p class="insight">{{node}}<span class="insight__t">Read by the team. Answered by email.</span></p>
+      <p class="contact__email" data-contact-email hidden>Email: <a href="#"></a></p>
+      <p class="contact__fine">{{ic:shield:sm}}<span>Education, not investment advice. We cannot discuss specific trades.</span></p>
+    </div>
+
+    <div class="contact__form-wrap" data-contact>
+      <noscript><p class="notice">The contact form needs JavaScript. Please enable it in your browser to send a message.</p></noscript>
+      <form class="form" novalidate data-contact-form>
+        <div class="input-wrap" data-q="name">
+          <label for="c-name">Full name</label>
+          <input class="input" id="c-name" name="name" type="text" autocomplete="name" required>
+          <p class="field-error" data-error></p>
+        </div>
+        <div class="input-wrap" data-q="email">
+          <label for="c-email">Email</label>
+          <input class="input" id="c-email" name="email" type="email" inputmode="email" autocomplete="email" required>
+          <p class="field-error" data-error></p>
+        </div>
+        <div class="input-wrap" data-q="topic">
+          <label for="c-topic">Topic</label>
+          <select class="input" id="c-topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="general">General enquiry</option>
+            <option value="pathways">Pathways</option>
+            <option value="partnership">Partnership or media</option>
+            <option value="other">Something else</option>
+          </select>
+          <p class="field-error" data-error></p>
+        </div>
+        <div class="input-wrap" data-q="message">
+          <label for="c-message">Message</label>
+          <textarea class="textarea" id="c-message" name="message" rows="5" maxlength="2000" required></textarea>
+          <p class="field-error" data-error></p>
+        </div>
+        <div class="q" data-q="consent">
+          <label class="choice choice--check"><input type="checkbox" name="consent" value="yes"><span class="choice__box"><span>I agree to be contacted about this message. <span class="choice__desc">See the <a href="privacy.html">Privacy Policy</a>.</span></span></span></label>
+          <p class="field-error" data-error></p>
+        </div>
+        <p class="error-text" data-submit-error role="alert" hidden></p>
+        <div><button class="btn btn--primary" type="submit" data-submit>Send message {{icon:arrow}}</button></div>
+      </form>
+      <div class="result result--inline" data-contact-done hidden tabindex="-1" aria-live="polite">
+        <h2 class="result__title">Thank you.</h2>
+        <p class="result__lead">Your message has been sent. We will reply by email.</p>
+        <p class="notice" data-dev-notice hidden><strong>Form delivery is not connected.</strong> Your message was not sent. The site owner needs to set <code>formEndpoint</code> in <code>assets/js/config.js</code>.</p>
+        <a class="link-arrow" href="index.html">Back to home {{icon:arrow}}</a>
+      </div>
+    </div>
+  </div>
+</section>

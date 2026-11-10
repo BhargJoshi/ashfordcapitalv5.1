@@ -1,0 +1,225 @@
+<!--meta
+title: Development Pathways
+description: Three development pathways, Market Readers, Market Operators and Capital Thinkers, each building a distinct market ability. See who each is for and how it works.
+nav: pathways
+body: page-pathways
+-->
+
+<section class="phero" aria-labelledby="pw-title">
+  <div class="container">
+    <div class="phero__intro">
+      <h1 id="pw-title">Three roles. <em>One progression.</em></h1>
+      <p class="lead">Each pathway builds one ability: interpretation, execution or capital judgment.</p>
+    </div>
+    <ul class="trio">
+      <li class="trio__item">
+        <figure>
+          <div class="trio__frame">
+            <img src="assets/img/art/readers.webp" width="1200" height="900" decoding="async" fetchpriority="high"
+              alt="A trader on a laptop scratches his head. The chart on his screen is covered by a question mark, because he lacks the knowledge to read it.">
+            <span class="trio__dev">Laptop</span>
+          </div>
+          <figcaption class="trio__cap"><span class="trio__k">Market Readers</span><b class="trio__lack">Lacks knowledge</b></figcaption>
+        </figure>
+      </li>
+      <li class="trio__item">
+        <figure>
+          <div class="trio__frame">
+            <img src="assets/img/art/operators.webp" width="1200" height="900" decoding="async"
+              alt="A trader at a desktop PC hovers over the buy button. His plan is ready on screen, but he cannot execute it.">
+            <span class="trio__dev">Desktop PC</span>
+          </div>
+          <figcaption class="trio__cap"><span class="trio__k">Market Operators</span><b class="trio__lack">Lacks execution</b></figcaption>
+        </figure>
+      </li>
+      <li class="trio__item">
+        <figure>
+          <div class="trio__frame">
+            <img src="assets/img/art/thinkers.webp" width="1200" height="900" decoding="async"
+              alt="A trader with a tablet rests his chin on his hand. His results swing between wins and losses, and a pair of dice sits on the desk, because he has no system.">
+            <span class="trio__dev">Tablet</span>
+          </div>
+          <figcaption class="trio__cap"><span class="trio__k">Capital Thinkers</span><b class="trio__lack">Lacks consistency &amp; systems</b></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="overview" aria-labelledby="overview-title">
+  <div class="container">
+    <div class="sec__head"><h2 id="overview-title">Pick by the <em>ability you need.</em></h2></div>
+
+    <div class="finder finder--page" data-finder>
+      <p class="finder__q" id="finder-q">Where do you struggle most?</p>
+      <div class="chips" role="group" aria-labelledby="finder-q">
+        <button class="chip" type="button" data-path="0" aria-pressed="false">Reading the market</button>
+        <button class="chip" type="button" data-path="1" aria-pressed="false">Acting on decisions</button>
+        <button class="chip" type="button" data-path="2" aria-pressed="false">Protecting capital</button>
+      </div>
+      <p class="finder__result" data-finder-result aria-live="polite">Not sure? <a href="begin.html">Take the assessment.</a></p>
+    </div>
+
+    <div class="pcards">
+      <article class="pcard reveal">
+        {{fig:readers}}
+        <h3 class="pcard__t">Market Readers</h3>
+        <p class="pcard__tag">Interpret.</p>
+        <a class="link-arrow" href="#readers" data-pathlink="0">Details {{icon:arrow}}</a>
+      </article>
+      <article class="pcard reveal" style="--rd:80ms">
+        {{fig:operators}}
+        <h3 class="pcard__t">Market Operators</h3>
+        <p class="pcard__tag">Decide and execute.</p>
+        <a class="link-arrow" href="#operators" data-pathlink="1">Details {{icon:arrow}}</a>
+      </article>
+      <article class="pcard reveal" style="--rd:160ms">
+        {{fig:thinkers}}
+        <h3 class="pcard__t">Capital Thinkers</h3>
+        <p class="pcard__tag">Allocate and preserve.</p>
+        <a class="link-arrow" href="#thinkers" data-pathlink="2">Details {{icon:arrow}}</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Pathway detail (tabbed; all panels visible without JavaScript) -->
+<section class="ptabs" id="pathway-detail" aria-label="Pathway details" data-tabs data-tabs-hash>
+  <div class="ptabs__bar">
+    <div class="container">
+      <div class="ptabs__list" role="tablist" aria-label="Choose a pathway">
+        <a class="ptabs__tab" role="tab" id="pt-readers" href="#readers" aria-selected="true" aria-controls="readers"><span class="ptabs__n">{{ic:eye:sm}}</span>Readers</a>
+        <a class="ptabs__tab" role="tab" id="pt-operators" href="#operators" aria-selected="false" aria-controls="operators" tabindex="-1"><span class="ptabs__n">{{ic:operator:sm}}</span>Operators</a>
+        <a class="ptabs__tab" role="tab" id="pt-thinkers" href="#thinkers" aria-selected="false" aria-controls="thinkers" tabindex="-1"><span class="ptabs__n">{{ic:rings:sm}}</span>Thinkers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="pathway" role="tabpanel" id="readers" aria-labelledby="pt-readers">
+      <header class="pathway__head">
+        <h2>Market Readers</h2>
+        <p class="pathway__tag">Build the ability to interpret.</p>
+        <figure class="pathway__img"><img src="assets/img/art/readers.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A trader on a laptop scratches his head over a chart he cannot read."></figure>
+      </header>
+      <div class="pbody">
+        <div class="pwho"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Traders past the beginner stage whose knowledge sits as isolated concepts. Confirmed by the readiness assessment.</p></div>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems</h3>
+            <ul class="ticks"><li>Fragmented understanding</li><li>Information overload</li><li>Reliance on indicators</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Builds</h3>
+            <ul class="ticks"><li>Organized knowledge</li><li>Clear priorities</li><li>Structured interpretations</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div>
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Live learning</li><li>Guided practice</li><li>Concept material</li><li>Assessments</li><li>Feedback</li></ul>
+          </div>
+          <p class="insight pprog">{{node}}<span class="insight__t">Independent reading, less reliance on outside opinions.</span></p>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=readers#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+
+    <div class="pathway" role="tabpanel" id="operators" aria-labelledby="pt-operators">
+      <header class="pathway__head">
+        <h2>Market Operators</h2>
+        <p class="pathway__tag">Build the ability to decide and execute.</p>
+        <figure class="pathway__img"><img src="assets/img/art/operators.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A trader at a desktop PC hovers over the buy button and cannot act."></figure>
+      </header>
+      <div class="pbody">
+        <div class="pwho"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Traders who understand markets but struggle to act when real money is at stake. Confirmed by the readiness assessment.</p></div>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems</h3>
+            <ul class="ticks"><li>Hesitation, second-guessing</li><li>Missed entries</li><li>Inconsistent risk execution</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Builds</h3>
+            <ul class="ticks"><li>Analysis turned into decisions</li><li>Risk and conditions defined</li><li>Discipline under uncertainty</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div>
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Daily live execution</li><li>Real-time trading</li><li>Risk guidance</li><li>Performance review</li></ul>
+          </div>
+          <p class="insight pprog">{{node}}<span class="insight__t">Process-driven behaviour, with risk set before entry.</span></p>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=operators#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+
+    <div class="pathway" role="tabpanel" id="thinkers" aria-labelledby="pt-thinkers">
+      <header class="pathway__head">
+        <h2>Capital Thinkers</h2>
+        <p class="pathway__tag">Build the ability to allocate and preserve capital.</p>
+        <figure class="pathway__img"><img src="assets/img/art/thinkers.webp" width="1200" height="900" loading="lazy" decoding="async" alt="A trader with a tablet and a pair of dice, with no consistent system behind his results."></figure>
+      </header>
+      <div class="pbody">
+        <div class="pwho"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Experienced participants moving from trades to portfolio-level judgment. Elite pathway, confirmed by assessment and conversation.</p></div>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems</h3>
+            <ul class="ticks"><li>Activity over longevity</li><li>No portfolio context</li><li>Short-horizon reviews</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Builds</h3>
+            <ul class="ticks"><li>Capital cycles and regimes</li><li>Portfolio-level thinking</li><li>Risk, exposure, allocation</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div>
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Strategic discussions</li><li>Regime intelligence</li><li>Portfolio systems</li><li>Capital reviews</li></ul>
+          </div>
+          <p class="insight pprog">{{node}}<span class="insight__t">Deliberate allocation, aimed at preservation and longevity.</span></p>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=thinkers#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="compare" aria-labelledby="compare-title">
+  <div class="container">
+    <div class="sec__head"><h2 id="compare-title">Side by <em>side.</em></h2></div>
+    <table class="compare__table">
+      <thead>
+        <tr><th scope="col"><span class="sr-only">Attribute</span></th><th scope="col">Readers</th><th scope="col">Operators</th><th scope="col">Thinkers</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Learn to</th><td data-label="Readers">See</td><td data-label="Operators">Act</td><td data-label="Thinkers">Allocate</td></tr>
+        <tr><th scope="row">Ability</th><td data-label="Readers">Interpret</td><td data-label="Operators">Decide and execute</td><td data-label="Thinkers">Allocate capital</td></tr>
+        <tr><th scope="row">Purpose</th><td data-label="Readers">Independent perception</td><td data-label="Operators">Consistent live execution</td><td data-label="Thinkers">Capital preservation</td></tr>
+        <tr><th scope="row">Format</th><td data-label="Readers">Live learning, practice</td><td data-label="Operators">Daily live sessions</td><td data-label="Thinkers">Strategy and portfolio reviews</td></tr>
+      </tbody>
+    </table>
+    <p class="insight reveal">{{node}}<span class="insight__t">Same method. A different ability each time.</span></p>
+  </div>
+</section>
+
+<section class="sec sec--tight" aria-labelledby="guard-title">
+  <div class="container">
+    <div class="panel guard reveal">
+      <div class="guard__grid">
+        <h2 id="guard-title">Intended development, <em>not guaranteed outcomes.</em></h2>
+        <div>
+          <ul class="guard__pts">
+            <li>{{ic:shield:sm}}<span>Pathways describe what they aim to develop.</span></li>
+            <li>{{ic:check:sm}}<span>No promise of profit or any specific result.</span></li>
+            <li>{{ic:risk:sm}}<span>Markets carry risk.</span></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn--light" href="begin.html">Take the assessment {{icon:arrow}}</a>
+            <a class="btn btn--outline-light" href="risk.html">Risk Disclosure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

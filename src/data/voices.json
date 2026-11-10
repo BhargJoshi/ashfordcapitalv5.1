@@ -1,0 +1,38 @@
+[
+  {
+    "quote": "A genuine line from a client goes here, in their own words.",
+    "name": "Client name",
+    "context": "Pathway, year",
+    "image": "assets/img/voices/voice-1.svg",
+    "alt": "Placeholder portrait of a client",
+    "focus": "50% 30%",
+    "sample": true
+  },
+  {
+    "quote": "Shared with permission, never polished for effect.",
+    "name": "Client name",
+    "context": "Pathway, year",
+    "image": "assets/img/voices/voice-2.svg",
+    "alt": "Placeholder portrait of a client",
+    "focus": "50% 30%",
+    "sample": true
+  },
+  {
+    "quote": "Their experience, written the way they would say it.",
+    "name": "Client name",
+    "context": "Pathway, year",
+    "image": "assets/img/voices/voice-3.svg",
+    "alt": "Placeholder portrait of a client",
+    "focus": "50% 30%",
+    "sample": true
+  },
+  {
+    "quote": "One honest sentence about what changed for them.",
+    "name": "Client name",
+    "context": "Pathway, year",
+    "image": "assets/img/voices/voice-4.svg",
+    "alt": "Placeholder portrait of a client",
+    "focus": "50% 36%",
+    "sample": true
+  }
+]
